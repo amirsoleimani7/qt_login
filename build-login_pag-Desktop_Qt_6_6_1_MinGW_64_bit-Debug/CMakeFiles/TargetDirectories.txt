@@ -1,0 +1,9 @@
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/edit_cache.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/rebuild_cache.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/list_install_components.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/local.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/install/strip.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag_autogen_timestamp_deps.dir
+C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag_autogen.dir
