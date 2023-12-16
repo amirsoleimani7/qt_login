@@ -1,8 +1,7 @@
 #ifndef SIGNUP_H
 #define SIGNUP_H
-
 #include <QDialog>
-
+#include "MainWindow.h"
 namespace Ui {
 class signup;
 }

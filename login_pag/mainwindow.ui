@@ -34,7 +34,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit"/>
+        <widget class="QLineEdit" name="lineEdit_user_log"/>
        </item>
       </layout>
      </item>
@@ -48,7 +48,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QLineEdit" name="lineEdit_2"/>
+        <widget class="QLineEdit" name="lineEdit_pass_log"/>
        </item>
       </layout>
      </item>

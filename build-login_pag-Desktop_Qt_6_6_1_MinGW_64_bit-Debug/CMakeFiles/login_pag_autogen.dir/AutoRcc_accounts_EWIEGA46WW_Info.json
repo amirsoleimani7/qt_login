@@ -1,0 +1,22 @@
+{
+	"BUILD_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/login_pag_autogen",
+	"CMAKE_BINARY_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag",
+	"CMAKE_SOURCE_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag",
+	"INCLUDE_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/login_pag_autogen/include",
+	"INPUTS" : 
+	[
+		"C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.txt"
+	],
+	"LOCK_FILE" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag_autogen.dir/AutoRcc_accounts_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "-name", "accounts" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_accounts.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.6.1/mingw_64/./bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag_autogen.dir/AutoRcc_accounts_EWIEGA46WW_Used.txt",
+	"SOURCE" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.qrc",
+	"VERBOSITY" : 0
+}
