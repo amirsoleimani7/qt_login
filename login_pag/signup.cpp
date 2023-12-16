@@ -2,11 +2,15 @@
 #include "ui_signup.h"
 #include <QFile>
 #include <QMessageBox>
+#include <QString>
 signup::signup(QWidget *parent)
     : QDialog(parent)
     , ui(new Ui::signup)
 {
     ui->setupUi(this);
+    ui->comboBox_gender->addItem("male");
+    ui->comboBox_gender->addItem("female");
+
 }
 
 signup::~signup()
@@ -35,10 +39,14 @@ void signup::on_pushButton_clicked()
     if(ui->lineEdit_age->text().isEmpty()){
         QMessageBox::warning(this,"age","age is empty");
     }
+
     else{
-        QMessageBox::information(this,"reausalt","all good!!");
+
+
+
     }
 
+    QMessageBox::information(this,"geder",ui->comboBox_gender->currentText());
 
 }
 
