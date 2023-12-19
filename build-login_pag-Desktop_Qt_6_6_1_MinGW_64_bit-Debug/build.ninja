@@ -200,7 +200,7 @@ build login_pag_autogen/timestamp login_pag_autogen/mocs_compilation.cpp | ${cma
 #############################################
 # Custom command for login_pag_autogen\EWIEGA46WW\qrc_accounts.cpp
 
-build login_pag_autogen/EWIEGA46WW/qrc_accounts.cpp | ${cmake_ninja_workdir}login_pag_autogen/EWIEGA46WW/qrc_accounts.cpp: CUSTOM_COMMAND C$:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.qrc CMakeFiles/login_pag_autogen.dir/AutoRcc_accounts_EWIEGA46WW_Info.json C$:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.txt C$:/Qt/6.6.1/mingw_64/./bin/rcc.exe || login_pag_autogen login_pag_autogen_timestamp_deps
+build login_pag_autogen/EWIEGA46WW/qrc_accounts.cpp | ${cmake_ninja_workdir}login_pag_autogen/EWIEGA46WW/qrc_accounts.cpp: CUSTOM_COMMAND C$:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.qrc CMakeFiles/login_pag_autogen.dir/AutoRcc_accounts_EWIEGA46WW_Info.json C$:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/icons/icons8-login-100.png C$:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/icons/user-interface.png C$:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/icons/icons8-sign-up-100.png C$:/Qt/6.6.1/mingw_64/./bin/rcc.exe || login_pag_autogen login_pag_autogen_timestamp_deps
   COMMAND = cmd.exe /C "cd /D C:\Users\amir_1\Desktop\cpp\kargah_9\loginpage\qt_login\build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug && C:\Qt\Tools\CMake_64\bin\cmake.exe -E cmake_autorcc C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag_autogen.dir/AutoRcc_accounts_EWIEGA46WW_Info.json Debug"
   DESC = Automatic RCC for accounts.qrc
   restat = 1
@@ -209,7 +209,7 @@ build login_pag_autogen/EWIEGA46WW/qrc_accounts.cpp | ${cmake_ninja_workdir}logi
 #############################################
 # Phony custom command for CMakeFiles\login_pag_autogen_timestamp_deps
 
-build CMakeFiles/login_pag_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/login_pag_autogen_timestamp_deps: phony C$:/Qt/6.6.1/mingw_64/./bin/uic.exe C$:/Qt/6.6.1/mingw_64/./bin/moc.exe C$:/Qt/6.6.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.1/mingw_64/lib/libQt6Core.a
+build CMakeFiles/login_pag_autogen_timestamp_deps | ${cmake_ninja_workdir}CMakeFiles/login_pag_autogen_timestamp_deps: phony C$:/Qt/6.6.1/mingw_64/./bin/moc.exe C$:/Qt/6.6.1/mingw_64/./bin/uic.exe C$:/Qt/6.6.1/mingw_64/lib/libQt6Widgets.a C$:/Qt/6.6.1/mingw_64/lib/libQt6Core.a
 
 
 #############################################

@@ -7,7 +7,9 @@
 	"INCLUDE_DIR" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/login_pag_autogen/include",
 	"INPUTS" : 
 	[
-		"C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.txt"
+		"C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/icons/icons8-login-100.png",
+		"C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/icons/user-interface.png",
+		"C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/icons/icons8-sign-up-100.png"
 	],
 	"LOCK_FILE" : "C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_Qt_6_6_1_MinGW_64_bit-Debug/CMakeFiles/login_pag_autogen.dir/AutoRcc_accounts_EWIEGA46WW_Lock.lock",
 	"MULTI_CONFIG" : false,

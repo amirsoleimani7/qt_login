@@ -25,7 +25,9 @@ QT_BEGIN_NAMESPACE
 class Ui_signup
 {
 public:
-    QWidget *layoutWidget;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *label_4;
     QVBoxLayout *verticalLayout_3;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
@@ -53,17 +55,25 @@ public:
 "    background-color: #d8d8d8; /* Set your desired background color for the whole page */\n"
 "}\n"
 ""));
-        layoutWidget = new QWidget(signup);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(110, 70, 301, 301));
-        verticalLayout_3 = new QVBoxLayout(layoutWidget);
+        widget = new QWidget(signup);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(140, 40, 253, 376));
+        verticalLayout_4 = new QVBoxLayout(widget);
+        verticalLayout_4->setObjectName("verticalLayout_4");
+        verticalLayout_4->setContentsMargins(0, 0, 0, 0);
+        label_4 = new QLabel(widget);
+        label_4->setObjectName("label_4");
+        label_4->setPixmap(QPixmap(QString::fromUtf8(":/icons/icons/icons8-sign-up-100.png")));
+
+        verticalLayout_4->addWidget(label_4);
+
+        verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setObjectName("verticalLayout_3");
-        verticalLayout_3->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        label = new QLabel(layoutWidget);
+        label = new QLabel(widget);
         label->setObjectName("label");
         label->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -74,7 +84,7 @@ public:
 
         verticalLayout_2->addWidget(label);
 
-        label_6 = new QLabel(layoutWidget);
+        label_6 = new QLabel(widget);
         label_6->setObjectName("label_6");
         label_6->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -85,7 +95,7 @@ public:
 
         verticalLayout_2->addWidget(label_6);
 
-        label_5 = new QLabel(layoutWidget);
+        label_5 = new QLabel(widget);
         label_5->setObjectName("label_5");
         label_5->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -96,7 +106,7 @@ public:
 
         verticalLayout_2->addWidget(label_5);
 
-        label_3 = new QLabel(layoutWidget);
+        label_3 = new QLabel(widget);
         label_3->setObjectName("label_3");
         label_3->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -107,7 +117,7 @@ public:
 
         verticalLayout_2->addWidget(label_3);
 
-        label_2 = new QLabel(layoutWidget);
+        label_2 = new QLabel(widget);
         label_2->setObjectName("label_2");
         label_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -123,7 +133,7 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        lineEdit_user_name = new QLineEdit(layoutWidget);
+        lineEdit_user_name = new QLineEdit(widget);
         lineEdit_user_name->setObjectName("lineEdit_user_name");
         lineEdit_user_name->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -143,7 +153,7 @@ public:
 
         verticalLayout->addWidget(lineEdit_user_name);
 
-        lineEdit_password = new QLineEdit(layoutWidget);
+        lineEdit_password = new QLineEdit(widget);
         lineEdit_password->setObjectName("lineEdit_password");
         lineEdit_password->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -163,7 +173,7 @@ public:
 
         verticalLayout->addWidget(lineEdit_password);
 
-        lineEdit_name = new QLineEdit(layoutWidget);
+        lineEdit_name = new QLineEdit(widget);
         lineEdit_name->setObjectName("lineEdit_name");
         lineEdit_name->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -183,7 +193,7 @@ public:
 
         verticalLayout->addWidget(lineEdit_name);
 
-        lineEdit_email = new QLineEdit(layoutWidget);
+        lineEdit_email = new QLineEdit(widget);
         lineEdit_email->setObjectName("lineEdit_email");
         lineEdit_email->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -203,7 +213,7 @@ public:
 
         verticalLayout->addWidget(lineEdit_email);
 
-        lineEdit_age = new QLineEdit(layoutWidget);
+        lineEdit_age = new QLineEdit(widget);
         lineEdit_age->setObjectName("lineEdit_age");
         lineEdit_age->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -231,7 +241,7 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        comboBox_gender = new QComboBox(layoutWidget);
+        comboBox_gender = new QComboBox(widget);
         comboBox_gender->setObjectName("comboBox_gender");
         comboBox_gender->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #808080; /* Set your desired gray background color */\n"
@@ -269,7 +279,7 @@ public:
 
         horizontalLayout_2->addWidget(comboBox_gender);
 
-        pushButton = new QPushButton(layoutWidget);
+        pushButton = new QPushButton(widget);
         pushButton->setObjectName("pushButton");
         pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: #808080; /* Set your desired gray background color */\n"
@@ -311,6 +321,9 @@ public:
         verticalLayout_3->addLayout(horizontalLayout_2);
 
 
+        verticalLayout_4->addLayout(verticalLayout_3);
+
+
         retranslateUi(signup);
 
         QMetaObject::connectSlotsByName(signup);
@@ -319,6 +332,7 @@ public:
     void retranslateUi(QDialog *signup)
     {
         signup->setWindowTitle(QCoreApplication::translate("signup", "Dialog", nullptr));
+        label_4->setText(QString());
         label->setText(QCoreApplication::translate("signup", "user name", nullptr));
         label_6->setText(QCoreApplication::translate("signup", "password", nullptr));
         label_5->setText(QCoreApplication::translate("signup", "name", nullptr));

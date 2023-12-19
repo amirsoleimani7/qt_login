@@ -1,5 +1,7 @@
 <RCC>
-    <qresource prefix="/acc">
-        <file>accounts.txt</file>
+    <qresource prefix="/icons">
+        <file>icons/user-interface.png</file>
+        <file>icons/icons8-sign-up-100.png</file>
+        <file>icons/icons8-login-100.png</file>
     </qresource>
 </RCC>

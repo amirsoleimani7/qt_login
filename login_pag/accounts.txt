@@ -1,4 +1,0 @@
-ali|1234|amirreza|amir@gmail.com|20|male
-al4|1234|amirreza|amir@gmail.com|20|male
-amirreza|1234|amirreza|amir@gmail.com|20|male
-mohammad|1234|amirhossein|amir@gmail.com|22|male

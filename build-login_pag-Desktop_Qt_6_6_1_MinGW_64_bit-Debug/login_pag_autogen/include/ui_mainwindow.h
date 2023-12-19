@@ -27,7 +27,9 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
-    QWidget *layoutWidget;
+    QWidget *widget;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_3;
     QVBoxLayout *verticalLayout;
     QHBoxLayout *horizontalLayout_2;
     QLabel *label;
@@ -52,15 +54,23 @@ public:
 ""));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
-        layoutWidget = new QWidget(centralwidget);
-        layoutWidget->setObjectName("layoutWidget");
-        layoutWidget->setGeometry(QRect(120, 130, 321, 221));
-        verticalLayout = new QVBoxLayout(layoutWidget);
+        widget = new QWidget(centralwidget);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(110, 30, 321, 381));
+        verticalLayout_2 = new QVBoxLayout(widget);
+        verticalLayout_2->setObjectName("verticalLayout_2");
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
+        label_3 = new QLabel(widget);
+        label_3->setObjectName("label_3");
+        label_3->setPixmap(QPixmap(QString::fromUtf8(":/icons/icons/icons8-login-100.png")));
+
+        verticalLayout_2->addWidget(label_3);
+
+        verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        verticalLayout->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        label = new QLabel(layoutWidget);
+        label = new QLabel(widget);
         label->setObjectName("label");
         label->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -71,7 +81,7 @@ public:
 
         horizontalLayout_2->addWidget(label);
 
-        lineEdit_user_log = new QLineEdit(layoutWidget);
+        lineEdit_user_log = new QLineEdit(widget);
         lineEdit_user_log->setObjectName("lineEdit_user_log");
         lineEdit_user_log->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -96,7 +106,7 @@ public:
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setObjectName("horizontalLayout_3");
-        label_2 = new QLabel(layoutWidget);
+        label_2 = new QLabel(widget);
         label_2->setObjectName("label_2");
         label_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
 "    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
@@ -107,7 +117,7 @@ public:
 
         horizontalLayout_3->addWidget(label_2);
 
-        lineEdit_pass_log = new QLineEdit(layoutWidget);
+        lineEdit_pass_log = new QLineEdit(widget);
         lineEdit_pass_log->setObjectName("lineEdit_pass_log");
         lineEdit_pass_log->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
 "    background-color: white; /* Set your desired background color for line edits */\n"
@@ -132,7 +142,7 @@ public:
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
-        pushButton_login = new QPushButton(layoutWidget);
+        pushButton_login = new QPushButton(widget);
         pushButton_login->setObjectName("pushButton_login");
         pushButton_login->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: rgba(128, 128, 128, 0.7); /* Set your desired gray transparent background color */\n"
@@ -170,7 +180,7 @@ public:
 
         horizontalLayout->addWidget(pushButton_login);
 
-        sign_up = new QPushButton(layoutWidget);
+        sign_up = new QPushButton(widget);
         sign_up->setObjectName("sign_up");
         sign_up->setStyleSheet(QString::fromUtf8("QPushButton {\n"
 "    background-color: rgba(128, 128, 128, 0.7); /* Set your desired gray transparent background color */\n"
@@ -211,6 +221,9 @@ public:
 
         verticalLayout->addLayout(horizontalLayout);
 
+
+        verticalLayout_2->addLayout(verticalLayout);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -228,6 +241,7 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        label_3->setText(QString());
         label->setText(QCoreApplication::translate("MainWindow", "user name ", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "pass word ", nullptr));
         pushButton_login->setText(QCoreApplication::translate("MainWindow", "log in", nullptr));
