@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/accounts_">
+    <qresource prefix="/acc">
         <file>accounts.txt</file>
     </qresource>
 </RCC>

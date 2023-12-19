@@ -25,7 +25,7 @@ QT_BEGIN_NAMESPACE
 class Ui_signup
 {
 public:
-    QWidget *widget;
+    QWidget *layoutWidget;
     QVBoxLayout *verticalLayout_3;
     QHBoxLayout *horizontalLayout;
     QVBoxLayout *verticalLayout_2;
@@ -49,38 +49,72 @@ public:
         if (signup->objectName().isEmpty())
             signup->setObjectName("signup");
         signup->resize(554, 458);
-        widget = new QWidget(signup);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(110, 70, 301, 301));
-        verticalLayout_3 = new QVBoxLayout(widget);
+        signup->setStyleSheet(QString::fromUtf8("QWidget {\n"
+"    background-color: #d8d8d8; /* Set your desired background color for the whole page */\n"
+"}\n"
+""));
+        layoutWidget = new QWidget(signup);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(110, 70, 301, 301));
+        verticalLayout_3 = new QVBoxLayout(layoutWidget);
         verticalLayout_3->setObjectName("verticalLayout_3");
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setObjectName("horizontalLayout");
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setObjectName("verticalLayout_2");
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
+        label->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
+"    font-size: 12pt; /* Set your desired font size for labels */\n"
+"    font-weight: bold; /* Set font weight to bold if desired */\n"
+"    color: #333; /* Set your desired text color for labels */\n"
+"}"));
 
         verticalLayout_2->addWidget(label);
 
-        label_6 = new QLabel(widget);
+        label_6 = new QLabel(layoutWidget);
         label_6->setObjectName("label_6");
+        label_6->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
+"    font-size: 12pt; /* Set your desired font size for labels */\n"
+"    font-weight: bold; /* Set font weight to bold if desired */\n"
+"    color: #333; /* Set your desired text color for labels */\n"
+"}"));
 
         verticalLayout_2->addWidget(label_6);
 
-        label_5 = new QLabel(widget);
+        label_5 = new QLabel(layoutWidget);
         label_5->setObjectName("label_5");
+        label_5->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
+"    font-size: 12pt; /* Set your desired font size for labels */\n"
+"    font-weight: bold; /* Set font weight to bold if desired */\n"
+"    color: #333; /* Set your desired text color for labels */\n"
+"}"));
 
         verticalLayout_2->addWidget(label_5);
 
-        label_3 = new QLabel(widget);
+        label_3 = new QLabel(layoutWidget);
         label_3->setObjectName("label_3");
+        label_3->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
+"    font-size: 12pt; /* Set your desired font size for labels */\n"
+"    font-weight: bold; /* Set font weight to bold if desired */\n"
+"    color: #333; /* Set your desired text color for labels */\n"
+"}"));
 
         verticalLayout_2->addWidget(label_3);
 
-        label_2 = new QLabel(widget);
+        label_2 = new QLabel(layoutWidget);
         label_2->setObjectName("label_2");
+        label_2->setStyleSheet(QString::fromUtf8("QLabel {\n"
+"    font-family: Arial, sans-serif; /* Set your desired font family for labels */\n"
+"    font-size: 12pt; /* Set your desired font size for labels */\n"
+"    font-weight: bold; /* Set font weight to bold if desired */\n"
+"    color: #333; /* Set your desired text color for labels */\n"
+"}"));
 
         verticalLayout_2->addWidget(label_2);
 
@@ -89,28 +123,103 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setObjectName("verticalLayout");
-        lineEdit_user_name = new QLineEdit(widget);
+        lineEdit_user_name = new QLineEdit(layoutWidget);
         lineEdit_user_name->setObjectName("lineEdit_user_name");
+        lineEdit_user_name->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    background-color: white; /* Set your desired background color for line edits */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    border-radius: 5px; /* Adjust this value to control the curvature */\n"
+"    padding: 5px; /* Set padding inside the line edits */\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"    border: 2px solid #a0a0a0; /* Change border color on hover */\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #4CAF50; /* Change border color when line edit is focused */\n"
+"}\n"
+""));
 
         verticalLayout->addWidget(lineEdit_user_name);
 
-        lineEdit_password = new QLineEdit(widget);
+        lineEdit_password = new QLineEdit(layoutWidget);
         lineEdit_password->setObjectName("lineEdit_password");
+        lineEdit_password->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    background-color: white; /* Set your desired background color for line edits */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    border-radius: 5px; /* Adjust this value to control the curvature */\n"
+"    padding: 5px; /* Set padding inside the line edits */\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"    border: 2px solid #a0a0a0; /* Change border color on hover */\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #4CAF50; /* Change border color when line edit is focused */\n"
+"}\n"
+""));
 
         verticalLayout->addWidget(lineEdit_password);
 
-        lineEdit_name = new QLineEdit(widget);
+        lineEdit_name = new QLineEdit(layoutWidget);
         lineEdit_name->setObjectName("lineEdit_name");
+        lineEdit_name->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    background-color: white; /* Set your desired background color for line edits */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    border-radius: 5px; /* Adjust this value to control the curvature */\n"
+"    padding: 5px; /* Set padding inside the line edits */\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"    border: 2px solid #a0a0a0; /* Change border color on hover */\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #4CAF50; /* Change border color when line edit is focused */\n"
+"}\n"
+""));
 
         verticalLayout->addWidget(lineEdit_name);
 
-        lineEdit_email = new QLineEdit(widget);
+        lineEdit_email = new QLineEdit(layoutWidget);
         lineEdit_email->setObjectName("lineEdit_email");
+        lineEdit_email->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    background-color: white; /* Set your desired background color for line edits */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    border-radius: 5px; /* Adjust this value to control the curvature */\n"
+"    padding: 5px; /* Set padding inside the line edits */\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"    border: 2px solid #a0a0a0; /* Change border color on hover */\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #4CAF50; /* Change border color when line edit is focused */\n"
+"}\n"
+""));
 
         verticalLayout->addWidget(lineEdit_email);
 
-        lineEdit_age = new QLineEdit(widget);
+        lineEdit_age = new QLineEdit(layoutWidget);
         lineEdit_age->setObjectName("lineEdit_age");
+        lineEdit_age->setStyleSheet(QString::fromUtf8("QLineEdit {\n"
+"    background-color: white; /* Set your desired background color for line edits */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    border-radius: 5px; /* Adjust this value to control the curvature */\n"
+"    padding: 5px; /* Set padding inside the line edits */\n"
+"}\n"
+"\n"
+"QLineEdit:hover {\n"
+"    border: 2px solid #a0a0a0; /* Change border color on hover */\n"
+"}\n"
+"\n"
+"QLineEdit:focus {\n"
+"    border: 2px solid #4CAF50; /* Change border color when line edit is focused */\n"
+"}\n"
+""));
 
         verticalLayout->addWidget(lineEdit_age);
 
@@ -122,13 +231,79 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setObjectName("horizontalLayout_2");
-        comboBox_gender = new QComboBox(widget);
+        comboBox_gender = new QComboBox(layoutWidget);
         comboBox_gender->setObjectName("comboBox_gender");
+        comboBox_gender->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #808080; /* Set your desired gray background color */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    color: white; /* Set the text color */\n"
+"    padding: 10px 20px; /* Set padding around the text */\n"
+"    font-weight: bold; /* Make the font bold */\n"
+"\n"
+"    /* Set border-radius for curvature */\n"
+"    border-radius: 10px; /* Adjust this value to control the curvature */\n"
+"\n"
+"    /* Add a transition for a smooth animation */\n"
+"    transition: background-color 0.3s, border 0.3s, transform 0.3s, box-shadow 0.3s;\n"
+"}\n"
+"\n"
+"/* Add a subtle box shadow for a classy look */\n"
+"QPushButton:hover {\n"
+"    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow effect */\n"
+"}\n"
+"\n"
+"/* Change button appearance on hover */\n"
+"QPushButton:hover {\n"
+"    background-color: #a0a0a0; /* Change background color on hover */\n"
+"}\n"
+"\n"
+"/* Change button appearance on press */\n"
+"QPushButton:p"
+                        "ressed {\n"
+"    background-color: #7a7a7a; /* Change background color when pressed */\n"
+"    border: 2px solid #636363; /* Change border color when pressed */\n"
+"    transform: scale(0.95); /* Apply a scale transform when pressed */\n"
+"    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow effect on press */\n"
+"}\n"
+""));
 
         horizontalLayout_2->addWidget(comboBox_gender);
 
-        pushButton = new QPushButton(widget);
+        pushButton = new QPushButton(layoutWidget);
         pushButton->setObjectName("pushButton");
+        pushButton->setStyleSheet(QString::fromUtf8("QPushButton {\n"
+"    background-color: #808080; /* Set your desired gray background color */\n"
+"    border: 2px solid #636363; /* Set your desired border color and thickness */\n"
+"    color: white; /* Set the text color */\n"
+"    padding: 10px 20px; /* Set padding around the text */\n"
+"    font-weight: bold; /* Make the font bold */\n"
+"\n"
+"    /* Set border-radius for curvature */\n"
+"    border-radius: 10px; /* Adjust this value to control the curvature */\n"
+"\n"
+"    /* Add a transition for a smooth animation */\n"
+"    transition: background-color 0.3s, border 0.3s, transform 0.3s, box-shadow 0.3s;\n"
+"}\n"
+"\n"
+"/* Add a subtle box shadow for a classy look */\n"
+"QPushButton:hover {\n"
+"    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow effect */\n"
+"}\n"
+"\n"
+"/* Change button appearance on hover */\n"
+"QPushButton:hover {\n"
+"    background-color: #a0a0a0; /* Change background color on hover */\n"
+"}\n"
+"\n"
+"/* Change button appearance on press */\n"
+"QPushButton:p"
+                        "ressed {\n"
+"    background-color: #7a7a7a; /* Change background color when pressed */\n"
+"    border: 2px solid #636363; /* Change border color when pressed */\n"
+"    transform: scale(0.95); /* Apply a scale transform when pressed */\n"
+"    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adjust the values for the shadow effect on press */\n"
+"}\n"
+""));
 
         horizontalLayout_2->addWidget(pushButton);
 

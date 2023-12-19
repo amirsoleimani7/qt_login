@@ -5,16 +5,20 @@
 #include <QString>
 #include <QDebug>
 #include <QTextStream>
+#include <QFileDialog>
+#include <QFile>
 
 using namespace std;
-signup::signup(QWidget *parent)
-    : QDialog(parent)
-    , ui(new Ui::signup)
+signup::signup(MainWindow *mainWindow, QWidget *parent)
+    : QDialog(parent),
+    ui(new Ui::signup),
+    mainWindow(mainWindow) // Store the pointer to MainWindow
 {
     ui->setupUi(this);
     ui->comboBox_gender->addItem("male");
     ui->comboBox_gender->addItem("female");
-
+    file_name_sign_up = mainWindow->get_name(); // Access the file_path from MainWindow
+    // file_name_sign_up = file_name_12; // You might not need this line anymore
 }
 
 signup::~signup()
@@ -53,8 +57,9 @@ void signup::on_pushButton_clicked()
         QString email = ui->lineEdit_email->text();
         QString age = ui->lineEdit_age->text();
         QString gender = ui->comboBox_gender->currentText();
-
-        QFile my_file("C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.txt");
+        //QString fileNameDir = static_cast<MainWindow*>(MainWindow)->file_name_dir;
+        //QString name_file = file_name_dir;
+        QFile my_file(file_name_sign_up);
         if (my_file.open(QIODevice::ReadOnly | QIODevice::Text)) {
             QTextStream in(&my_file);
 
@@ -68,16 +73,16 @@ void signup::on_pushButton_clicked()
                 // Ensure there are enough fields
 
                 QString user_name_1 = fields[0];
-                QString password_1 = fields[1];
-                if(user_name_1 == user_name && password_1 == password){
-                    QMessageBox::warning(this,"title","alraedy added!!");
+                //QString password_1 = fields[1];
+                if(user_name_1 == user_name){
+                    QMessageBox::warning(this,"title","there is user with the same username!!");
                     return;
                 }
                 my_file.close();
             }
         }
 
-        QFile my_file_1("C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/accounts.txt");
+        QFile my_file_1(file_name_sign_up);
         if (!my_file_1.open(QIODevice::WriteOnly | QIODevice::Append | QIODevice::Text)) {
             //qDebug() << "Could not open file";
             QMessageBox::warning(this,"title","could not open file");

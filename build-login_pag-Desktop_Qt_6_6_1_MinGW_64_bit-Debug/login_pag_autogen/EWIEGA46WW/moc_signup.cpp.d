@@ -347,4 +347,4 @@ C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/build-login_pag-Desktop_
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/time.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/vadefs.h \
   C:/Qt/Tools/mingw1120_64/x86_64-w64-mingw32/include/wchar.h \
-  C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/MainWindow.h
+  C:/Users/amir_1/Desktop/cpp/kargah_9/loginpage/qt_login/login_pag/mainwindow.h
