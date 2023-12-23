@@ -6,6 +6,8 @@
 #include <QFile>
 #include <QFileDialog>
 #include <QDir>
+#include <QCryptographicHash>
+
 //#include <QTextStream>
 
 MainWindow::MainWindow(QWidget *parent)
@@ -36,6 +38,10 @@ void MainWindow::on_pushButton_login_clicked()
 {
     QString user_name_input = ui->lineEdit_user_log->text();
     QString user_pass_input = ui->lineEdit_pass_log->text();
+    QCryptographicHash hash(QCryptographicHash::Sha256);
+    hash.addData(user_pass_input.toUtf8());
+    QByteArray hashedResult = hash.result();
+    QString hashedHex = hashedResult.toHex();
 
     QFile my_file(file_name_dir);
     if (my_file.open(QIODevice::ReadOnly | QIODevice::Text)) {
@@ -46,15 +52,16 @@ void MainWindow::on_pushButton_login_clicked()
 
             QStringList fields = line.split('|');
 
+
             if (fields.size() >= 2) {
                 QString user_name_12 = fields[0];
                 QString password_12 = fields[1];
 
-                if (user_name_12 == user_name_input && password_12 == user_pass_input) {
+                if (user_name_12 == user_name_input && password_12 == hashedHex) {
                     QMessageBox::information(this, "title", "Your in!!");
                     my_file.close();
                     return;
-                } else if (user_name_12 == user_name_input && password_12 != user_pass_input) {
+                } else if (user_name_12 == user_name_input && password_12 != hashedHex) {
                     QMessageBox::warning(this, "title", "wrong pass");
                     my_file.close();
                     return;

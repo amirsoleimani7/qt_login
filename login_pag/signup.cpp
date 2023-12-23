@@ -7,6 +7,7 @@
 #include <QTextStream>
 #include <QFileDialog>
 #include <QFile>
+#include <QCryptographicHash>
 
 using namespace std;
 signup::signup(MainWindow *mainWindow, QWidget *parent)
@@ -90,8 +91,12 @@ void signup::on_pushButton_clicked()
             return;
         }
         else {
+            QCryptographicHash hash(QCryptographicHash::Sha256);
+            hash.addData(password.toUtf8());
+            QByteArray hashedResult = hash.result();
+            QString hashedHex = hashedResult.toHex();
             QTextStream out(&my_file_1);
-            out << user_name << '|' << password << '|' << name << '|' << email << '|' << age << '|' << gender << Qt::endl;
+            out << user_name << '|' << hashedHex << '|' << name << '|' << email << '|' << age << '|' << gender << Qt::endl;
 
             my_file_1.flush();
             my_file_1.close();
